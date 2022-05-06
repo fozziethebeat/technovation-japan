@@ -1,12 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'firebase_options.dart';
+//import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
+    options: const FirebaseOptions(
+      apiKey: 'AIzaSyC2K2ur5AAgpLBu2qANcIUexDXhss1Qcqw',
+      appId: '3:156526871941:ios:8233d7448f4287b4b530ec',
+      messagingSenderId: '156526871941',
+      projectId: 'fir-lab-45f80',
+      storageBucket: 'fir-lab-45f80.appspot.com',
+      iosClientId:
+          '156526871941-vhdc360m2mu2q84e2bbbsllhm2ib9dh4.apps.googleusercontent.com',
+      iosBundleId: 'com.example.demoFirebaseSearch',
+    ),
   );
   runApp(const MyApp());
 }

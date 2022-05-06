@@ -19,7 +19,7 @@ export default function InitialScreen({ navigation }) {
   return (
     <View>
       <TextButton
-        onPress={() =>
+        onPress={() => farmerHander()}
         title="Farmer"
       />
       <TextButton
