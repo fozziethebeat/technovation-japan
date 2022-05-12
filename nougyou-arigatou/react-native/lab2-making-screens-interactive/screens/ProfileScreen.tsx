@@ -16,9 +16,17 @@ export default function ProfileScreen({ navigation, route }) {
   // Making Screens Interactive:
   //   This state object can be used to store comments while they're being
   //   written.
+  //   
+  //   Here, `text` will store the contents of the current comment being
+  //   written.  We can use `setText` to update the current comment every time
+  //   a user types into the TextInput element.
   const [text, setText] = useState('');
   // Making Screens Interactive:
   //   This state object can be used to store all submitted comments.
+  //
+  //   Here, `comments` will be the list of all the submitted comments.  We can
+  //   use `setComments` to update the list of comments to include all the
+  //   previous comments and the newest comment being submitted.
   const [comments, setComments] = useState([]);
 
   const farmer = farmers
